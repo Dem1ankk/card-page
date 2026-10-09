@@ -4,12 +4,12 @@
 <meta charset="UTF-8">
 <title>first web</title>
     <style> 
-.ff:hover{
+.button:hover{
  color: #ffe; 
 background-color: #5488af;
 }
 
-.ff{    
+.button{    
 background-color: aqua;
 color: red;
 height:90px;
@@ -43,14 +43,26 @@ body {
 <body>    
 <div class="card"> 
 
-<h1 >change</h1>
+<h1 id="heading">true</h1>
 
 <p>button
 </p>
 
 
 
-<button class="ff">click</button>
+<button class="button">click</button>
 </div>
+<script>
+  console.log("hi with JS") 
+  let heading = document.querySelector("#heading");
+const element = document.querySelector("button")
+  element.addEventListener('click', function (event) {
+   if(heading.textContent === "true"){
+    heading.textContent = "false"
+  }else{
+  heading.textContent = "true"
+  }
+})
+</script>
 </body>
  </html>
