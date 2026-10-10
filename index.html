@@ -47,20 +47,27 @@ body {
 
 <p>button
 </p>
-
+<input id="write">
 
 
 <button class="button">click</button>
 </div>
 <script>
   console.log("hi with JS") 
+  const input = document.querySelector("#write")
+  let button = document.querySelector("button")
   let heading = document.querySelector("#heading");
-const element = document.querySelector("button")
-  element.addEventListener('click', function (event) {
-   if(heading.textContent === "true"){
-    heading.textContent = "false"
-  }else{
-  heading.textContent = "true"
+  button.addEventListener('click', function (event) {
+ heading.textContent = input.value
+ if(input.value ===""){
+    heading.textContent = "NONE"
+ } 
+  
+   if(button.textContent === "click"){
+    button.textContent = "clicked"
+  }
+  else{
+    button.textContent = "click"
   }
 })
 </script>
