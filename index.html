@@ -2,6 +2,8 @@
 <html lang="uk"> 
 <head>
 <meta charset="UTF-8">
+  <meta name="viewport"
+  content="width=device-width,initial-scale=1">
 <title>first web</title>
     <style> 
 .button:hover{
@@ -20,16 +22,16 @@ width: 90px;
 }
  
 .card{
-   
-    width: 300px;
+    width:100%;
     box-sizing: border-box;
-    
     border-radius: 20px;
 box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.767);
 background-color:gray; 
 min-height: 50vh;
 align-content:center ;
-padding:108px;
+padding: 20px;
+max-width:300px;
+margin: 0 auto;
 }
 body {
     min-height: 100vh;
@@ -37,6 +39,9 @@ body {
     justify-content: center;
     align-items: center;  
     margin: 0px;
+}
+
+@media(max-width: 600px){ 
 }
 </style>
 </head>
